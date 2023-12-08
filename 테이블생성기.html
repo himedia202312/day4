@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 넘어온 숫자가 1자리수이면, 앞에 '0'문자붙이고
+        //아니면 그냥 쓰자..
+        function getNumString(n){
+            let str="";
+
+            if(n<10){ //한자리수이면...
+                str="0"+n;
+            }else{ //두자리수 이면..
+                str=n;
+            }
+            console.log("결과는 ", str);
+            return str;
+        }
+
+        let f = parseInt(prompt("층수 입력"));
+        let r = parseInt(prompt("호수 입력"));
+
+        //태그들을 문자열로 담게될 전역변수
+        let tag;
+        tag="<table border=\"1px\">";
+        for(let i=1;i<=f;i++){    
+            tag=tag+"<tr>";//천장
+            for(let a=0;a<=r;a++){
+                tag=tag+"<td>"+i+getNumString(a)+" 호</td>";    
+            }
+            tag=tag+"</tr>";//바닥
+        }
+        tag=tag+"</table>";
+
+        document.write(tag);
+  
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
+
+
+

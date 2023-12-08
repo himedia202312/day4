@@ -1,0 +1,168 @@
+<script>
+/*8번문제 */
+
+// for(let i=1;i<=10;i++){
+//     document.write("☆");
+// }
+
+// 9번 
+// for(let i=2;i<=10;i+=2){
+//     document.write(i);
+// }
+//11번 
+/*
+for(let i=1;i<=96;i++){
+    document.write("★");
+
+    if(i%10==0){//10번 마다, 10개씩, 10으로 나누었을때 0
+        document.write("<br>");
+    }
+}
+*/
+//12번 
+/*
+for(let i=1;i<=25;i++){
+    //5번째를 만나면 검정별+개행 처리 
+    if(i%5==0){
+        document.write("★<br>");
+    }else{
+        //아니면 그냥 흰별
+        document.write("☆");
+    }
+}
+*/
+/*
+for(let i=1;i<=25;i++){
+    let str = (i%5==0)? "★<br>":"☆";
+    document.write(str);
+}
+*/
+/*
+for(let i=1;i<=10;i++){
+    document.write(i+"회반복 <br>");
+}
+*/
+/*
+for(let i=2;i<=10;i+=2){
+    document.write(i+"회 반복<br>");
+}
+*/
+/*
+for(let i=1;i<=10;i++){
+    if(i%2==0){//짝수인 경우에는 한글로 변역
+        document.write("짝수<br>");
+    }else{
+        document.write(i+"<br>");
+    }
+}
+*/
+/*
+for(let i=1;i<=10;i++){
+   
+    if(i%3==0){ //3마다 검정별
+        document.write("★<br>");
+    }else{//아닌 경우엔 그냥 출력
+        document.write(i+"회반복<br>");
+    }
+}
+*/
+/*
+for(let i=1;i<=19;i++){
+    if(i%5==0){//5번째 마다는 검정별 
+        document.write("★");
+    }else{//아니면 그냥 흰별
+        document.write("☆");
+    }
+}
+*/
+/*
+for(let i=105;i<=108;i++){
+    document.write(i+"<br>");
+}
+*/
+/*
+for(let i=1;i<=9;i++){
+    document.write("3*"+i+"="+(3*i)+" <br>");
+}
+*/
+/*
+for(let i=1;i<=9;i++){
+    document.write((3*i)+"=3*"+i+" <br>");
+}
+*/
+/*
+for(let i=1;i<=8;i++){
+    document.write(i+"*"+(i+1)+" = "+i*(i+1)+" <br>");
+}
+*/
+/*
+for(let i=9;i>=1;i--){
+    document.write("5*"+i+"= "+(5*i)+"  <br>");
+}
+*/
+
+/*
+for(let i=1;i<=10;i++){
+    //5미만이면 하얀별 
+    let msg="";
+    /*  
+    if(i<=5){
+        msg="☆";
+    }else{//아니면 검정별 
+        msg="★";
+    }
+    msg=(i<=5)? "☆":"★";
+    document.write(msg);
+    */
+
+//25번 
+//입력한 수부터 시작하여, 0보다 클때까지 반복
+/*
+let n= parseInt(prompt("수를 입력하세요"));
+
+for(let i=n; i>0; i--){
+    document.write(i+"<br>");
+}
+*/
+/*
+let n = parseInt(prompt("단수 입력"));
+
+for(let i=1;i<=9;i++){
+    document.write(n+"*"+i+"="+(n*i)+" <br>");
+}
+*/
+
+//반복문의 범위는  
+//사용자가 입력한 수-1 부터 ~ 수+1 까지 
+/*
+let n = parseInt(prompt("수입력"));
+for( let i=n-1 ; i<=n+1; i++     ){
+    document.write(i+"<br>");
+}
+*/
+
+//29번 문제 
+//어떤 문자를 출력할지 사용자가 결정
+//let msg=prompt("출력하실 문자 입력");
+
+//몇번 반복해야할지를 사용자가 결정
+//let n=parseInt(prompt("반복 횟수를 입력"));
+/*
+for(let i=1;i<=n;i++){
+    document.write(msg + "<br>");
+}
+*/
+//30 번 
+/*
+let n=parseInt(prompt("개행 번째 입력"));
+
+for(let i=1;i<=100;i++){
+    document.write("★");
+
+    if(i%n==0){
+        document.write("<br>");
+    }
+}
+*/
+
+</script>
